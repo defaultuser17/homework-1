@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Страница регистрации</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Регистрация</h1>
+	<form action="auth.html">
+		<fieldset>
+			<legend>Введите ваши данные для регистрации</legend>
+			<input type="email" required minlength="5" maxlength="200">
+			<label>Укажите ваш действующий e-mail</label>
+			<br>
+			<input type="password" required minlength="8" maxlength="18">
+			<label>Придумайте пароль (минимум 8 символов, максимум 18)</label>
+			<br>
+			<input type="password" required minlength="8" maxlength="18">
+			<label>Подтвердите введеный пароль</label>
+			<br>
+				<fieldset>
+					<legend>Укажите ваш пол</legend>
+						<label><input type="radio" name="answer" checked>Мужской</label>
+						<br>
+						<label><input type="radio" name="answer">Женский</label>
+				</fieldset>
+			<br>
+				<fieldset>
+					<legend>Загрузите ваше фото</legend>
+						<label><input type="file" multiple accept="image/*">Выбрать фото</label>
+				</fieldset>
+			<br>
+			<label>Выберите город проживания</label>
+			<select>
+				<option>Москва</option>
+				<option>Санкт-Петербург</option>
+				<option>Екатеринбург</option>
+			</select>
+			<br>
+			<input type="checkbox" required>
+			<label>Мне исполнилось 18 лет, и я согласен на обработку персональных данных</label>
+			<br>
+			<br>
+			<button type="submit">Зарегистрироваться</button>	
+		</fieldset>
+	</form>
+
+
+</body>
+</html>
